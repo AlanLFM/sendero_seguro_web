@@ -1,6 +1,9 @@
+import Topbar from '../components/Topbar/Topbar'
+
 const Estadisticas = () => {
   return (
     <main className="placeholder-page">
+      <Topbar />
       <div className="placeholder-card">
         <p className="placeholder-label">ADMIN</p>
         <h1>Estadisticas</h1>

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Bell,
   MapPin,
   Wifi,
   Users,
@@ -8,31 +7,25 @@ import {
   ShieldCheck,
   EyeOff,
 } from "lucide-react";
+import Topbar from "../Topbar/Topbar";
 import "./Inicio.css";
 
 const Inicio = () => {
   return (
     <main className="main-content">
-      {/* TOP BAR */}
-      <header className="topbar">
-        <div className="topbar-alert">
-          <div className="bell-box">
-            <Bell size={18} />
-          </div>
-          <div>
-            <h2>Vigilancia en Tiempo Real</h2>
-            <p>CAMPUS ZACATENCO · ESCOM</p>
-          </div>
-        </div>
+      <Topbar />
 
-        <div className="user-box">
-          <div className="user-info">
-            <strong>Estudiante IPN</strong>
-            <span>2023600123</span>
-          </div>
-          <div className="avatar">🎓</div>
+      <section className="dashboard-banner">
+        <div className="banner-left">
+          <div className="banner-pill">VIGILANCIA EN TIEMPO REAL</div>
+          <h2>Campus Zacatenco · ESCOM</h2>
+          <p>Alertas activas y reportes pendientes supervisados en todo momento.</p>
         </div>
-      </header>
+        <div className="banner-right">
+          <div className="status-dot" />
+          <span>Estado: Operativo</span>
+        </div>
+      </section>
 
       {/* MAP AREA */}
       <section className="map-area">
